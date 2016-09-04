@@ -1,0 +1,168 @@
+
+body{
+	background-color:#3F51B5;
+width:100%;
+font-size:14px;
+font-family: 'Questrial', sans-serif;
+}
+
+
+/* Portrait and Landscape */
+
+
+
+@media screen and (max-width: 1980px){
+	#faltan{
+		font-size:3em;
+		color:#FFC107;
+	}
+	.dias{
+		font-size:10em;
+		color:#42A5F5;
+	}
+	
+	.diaspara{
+		font-size:3em;
+		
+	}
+	
+	.desc{
+		font-size:4em;
+	}
+	
+	#slide{
+		width:100%;
+		margin:0px;
+		padding:0px;
+		background: url(../img/logo-argentina.png) no-repeat;
+		background-position: top left;
+		background-size: 250px auto;
+		}
+}
+
+
+
+@media screen and (max-width: 400px) {
+#faltan{
+		font-size:2em;
+		color:#FFC107;
+	}m
+	.dias{
+		font-size:5em;
+		color:#42A5F5;
+	}
+	
+	.diaspara{
+		font-size:3em;
+		
+	}
+	
+	.desc{
+		font-size:3em;
+	}
+	#slide{
+		width:100%;
+		margin:0px;
+		padding:0px;
+		background: url(../img/logo-argentina.png) no-repeat;
+		background-position: top center;
+		background-size: 75px auto ;
+		
+		}
+}
+
+
+/*divs slide*/
+
+
+.slide1{
+	margin-top:0%;
+	padding-top:0px;
+	width:100%;
+	height: 100%;
+	min-height:350px;
+}
+
+.textoSlide{
+	margin-top:0%;
+	padding-top:0px;
+}
+
+
+
+h1{
+		margin:0px;
+	padding:0px;
+}
+h3{
+	margin:0px;
+	padding:0px;
+	
+	font-size:14px;
+}
+.dias {
+font-family: 'Dancing Script', cursive;
+margin: 0px;
+padding:0px;
+/*background-color: rgba(255,255,255,0.2);*/
+}
+.diaspara {
+font-family: 'Dancing Script', cursive;
+color:white;
+margin: 0px;
+padding:0px;
+/*background-color: rgba(255,255,255,0.2);*/
+}
+.desc {
+font-family: 'Dancing Script', cursive;
+color:white;
+margin: 0px;
+padding:0px;
+/*background-color: rgba(255,255,255,0.2);*/
+}
+
+p{
+color: #efefef;
+}
+
+.seccion {
+	filter:  alpha(opacity=50);
+	background-color:rgba(0,0,0,0.5);
+	border:1px solid #fff;
+	text-align:center;
+	border-radius: 24px 24px 24px 24px;
+	-moz-border-radius: 24px 24px 24px 24px;
+	-webkit-border-radius: 24px 24px 24px 24px;
+	border: 0px solid #000000;
+}
+
+/* Start by setting display:none to make this hidden.
+   Then we position it in relation to the viewport window
+   with position:fixed. Width, height, top and left speak
+   for themselves. Background we set to 80% white with
+   our animation centered, and no-repeating */
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/Preloader_2.gif') 
+                50% 50% 
+                no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;   
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
